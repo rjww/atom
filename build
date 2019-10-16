@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SOURCE_DIR="./src"
+OUTPUT_DIR="./rjww"
+DATA_DIR="./data"
+AGGREGATION_BACKUPS="$DATA_DIR/AggregationServer"
+CONTENT_BACKUPS="$DATA_DIR/ContentServer/records"
+
+if [ ! -d "$DATA_DIR" ]; then mkdir --parents "$DATA_DIR/"; fi
+if [ ! -d "$AGGREGATION_BACKUPS" ]; then mkdir --parents "$AGGREGATION_BACKUPS/"; fi
+if [ ! -d "$CONTENT_BACKUPS" ]; then mkdir --parents "$CONTENT_BACKUPS/"; fi
+
+if [ -d $OUTPUT_DIR/ ]; then rm -r $OUTPUT_DIR/; fi
+if [ "$(ls -A $AGGREGATION_BACKUPS)" ]; then rm $AGGREGATION_BACKUPS/*; fi
+if [ "$(ls -A $CONTENT_BACKUPS)" ]; then rm $CONTENT_BACKUPS/*; fi
+
+javac -d . $SOURCE_DIR/*.java

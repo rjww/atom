@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Building system from source..."
+source ./build
+
+echo "Running test suite..."
+java rjww.atom.Test

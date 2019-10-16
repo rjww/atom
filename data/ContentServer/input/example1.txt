@@ -1,0 +1,18 @@
+title:Example Feed 1
+subtitle:For testing purposes
+link:http://www.blah.com
+updated:2019-10-10T14:27:01Z
+author:Robert Woods
+id:urn::uuid:e8fdefad-8fd3-4d01-9707-aa63a0a8d195
+entry
+title:Entry A
+link:http://www.blah.com
+id:urn::uuid:b9e86da2-93b6-490a-95a3-46e191f800ad
+updated:2019-10-10T14:27:01Z
+summary:This is the content for Entry A of Example Feed 1.
+entry
+title:Entry B
+link:http://www.blah.com
+id:urn::uuid:e0ac9c9a-c915-435a-9b1c-53f1aba41bb0
+updated:2019-10-10T14:27:01Z
+summary:This is the content for Entry B of Example Feed 1.
